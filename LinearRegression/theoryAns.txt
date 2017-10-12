@@ -1,0 +1,7 @@
+Q1) What is the effect of the size of the mini-batch on the speed and testing error of the solution?
+Using larger mini-batches in SGD allows you to reduce the variance of your stochastic gradient updates by taking the average of the gradients in the mini-batch, and this in turn allows you to take bigger step sizes, which means the optimization algorithm will progress faster. If the batch-size is too small (for e.g 1) then the variance in your loss function would be drastic, as each input would have equal effect on the error. Thus randomly choosing an outlier as the batch would increase the error drastically. Error might fluctuate more in case of a smaller batch size.
+Also having smaller batchsize would take more time to converge due to this variance.
+
+Q2) How does the test error change as a function of λ and n?
+I believe that the test error would monotonically decrease as λ increases. Also, the test error is inversely proportional to n. Thus n = 2 has the largest test error.
+
