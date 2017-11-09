@@ -130,7 +130,7 @@ def classification_error_print(X_train, y_train, theta):
 
 def main():
     # Import data
-    data = scio.loadmat('HW2_Data/data2')
+    data = scio.loadmat('HW2_Data/data1')
 
     # Form testing and training data
     X_trn = np.insert(data['X_trn'], 0, 1, axis=1)
