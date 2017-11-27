@@ -1,0 +1,1 @@
+To get the desired plots run q7.py. The same plots are shown in the report.
